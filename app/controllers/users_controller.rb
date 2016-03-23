@@ -30,6 +30,11 @@ def update
       render 'edit'
     end
 
+def show
+  @user = User.find(params[:id])
+end
+
+
 end
 
   private
